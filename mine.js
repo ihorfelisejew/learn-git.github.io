@@ -1,0 +1,13 @@
+$('.video_img').click(function(){
+	$('#preview').css('display','none');
+	$('#watching').css('display','block');
+	$('#video')[0].play()
+});
+$('.video_stop').click(function(){
+	$('#video')[0].pause();
+	$('#preview').css('display','block');
+	$('#watching').css('display','none');
+});
+$(document).ready(function(){
+	$('.slider').slick();
+});
